@@ -1,5 +1,5 @@
 
-// scripting of auto-complete searchbar
+// creating an array holding all search results
 let available_words = new Array(
    'Nyanya Abuja to Biyan sokoto',
    'Wuse Abuja to Waru Adamawa',
