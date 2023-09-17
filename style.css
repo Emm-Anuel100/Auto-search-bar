@@ -1,0 +1,330 @@
+:root{
+   --header_background: rgba(95, 94, 94, 0.192);
+   --ul_background: rgba(95, 94, 94, 0.192);
+   --burger_white: #ffffff;
+   --white: #fff;
+   --background: #141414;
+   --black: #000;
+   --border-top1: 2px solid rgba(212, 208, 208, 0.1);
+}
+*,*::before,::after{
+   padding: 0;
+   margin: 0;
+   border: none;
+   transition: linear  0.4s;
+   -o-transition: linear  0.4s;
+   -moz-transition: linear  0.4s;
+   -webkit-transition: linear  0.4s;
+   outline: none;
+   list-style: none;
+   box-sizing: border-box;
+   -moz-box-sizing: border-box; /* mozilla firefox browser */
+   -webkit-box-sizing: border-box; /* chrome, safari 3 */
+   font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+}
+body{
+   width: 100%;
+   height: 150vh;
+   overflow-x: hidden;
+   background: var(--background);
+   color: #f7f3f3;
+}
+header{
+   position: fixed;
+   top: 1rem; left: 0; right: 0;
+   background: var(--header_background);
+   padding: 0 5%;
+   height: 5.2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 99999;
+}
+
+/* searchbox styling starts here */
+ .search-box{
+   width: 39%;
+   border: none;
+   margin: 18px 10%;
+   max-height: 26rem;
+}
+.row{
+   display: flex;
+   align-items: center;
+   padding: 0 5px;
+}
+::placeholder{
+   font-size: 14px;
+   letter-spacing: 3;
+   color: #979797;
+   font-family:Arial, Helvetica, sans-serif;
+}
+header a{
+   font-size: 23px;
+   position: absolute;
+   top: 20px;
+   color: #9e9c9c;
+}
+input[type="text"]{
+   height: 45px;
+   width: 250%;
+   border-radius: 4px;
+   background: transparent;
+   border: 1px solid rgba(214, 210, 210, 0.377);
+   padding: 0 5%;
+   display: inline;
+   font-size: 14px;
+   letter-spacing: 3;
+   color: #979797;
+   font-family:Arial, Helvetica, sans-serif;
+}
+button[type="search"]{
+   position: relative;
+   left: 230%;
+   bottom: 2.3rem;
+   font-size: 20px;
+   background: none;
+   cursor: pointer;
+}
+button[type="search"] > span{
+   position: absolute;
+   visibility: hidden;
+   align-items: center;
+   top: 3.5rem;
+   left: -30px;
+   font-size: 13px;
+   color: #b6b5b5;
+   background: rgb(48, 47, 47);
+   padding: 8px 12px;
+   border-radius: 5px;
+}
+button[type="search"]:hover span{
+   visibility: visible;
+   transition: linear all .5s;
+}
+.result-box{
+   background: #2b2a2a;
+   border-radius: 4px;
+   padding: 0 10px;
+   transition: ease-in 2s;
+   max-height: 20rem;
+   overflow-y: scroll;
+}
+.result-box::-webkit-scrollbar{
+   width: 4px;
+   background: #eee;
+}
+.result-box::-webkit-scrollbar-button{
+   background: rgb(235, 234, 234);
+ }
+ .result-box::-webkit-scrollbar-thumb{
+   background:  gray;
+}
+.result-box ul{
+   transition: ease-in linear .5s;
+}
+.result-box ul li{
+   border-radius: 3px;
+   transition: ease-in .3s;
+   padding: 15px 10px;
+   cursor: pointer;
+   font-size: 14px;
+   letter-spacing: 3;
+   color: #928f8f;
+   font-family:Arial, Helvetica, sans-serif;
+}
+.result-box ul li:hover{
+   background:  rgb(61, 62, 63);
+   position: relative;
+} 
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 450px) {  
+   button[type="search"]{
+      left: 222%;
+      bottom: 2.3rem;
+   }
+   .search-box{
+      width: 80%;
+   }
+   input[type="text"]{
+      width: 175%;
+   }
+   button[type="search"]{
+      left: 155%;
+   }
+   }
+
+
+@media screen and (max-width: 400px) {  
+   .search-box{
+      width: 55%;
+   }
+   input[type="search"]{
+      left: 145%;
+   }
+   }
+
+header{
+   top: 10px; left: 0; right: 0;
+   height: 5.3rem;
+   background: rgb(32, 31, 31);
+
+   padding: 0 4%;
+   display: block;
+   justify-content: center;
+}
+.main-container{
+   position: relative;
+   top: 6%;
+   margin: 0 2%;
+}
+
+
+/* searchbox styling starts here */
+ .search-box{
+   width: 39%;
+   border: none;
+   margin: 18px 10%;
+   max-height: 26rem;
+}
+.row{
+   display: flex;
+   align-items: center;
+   padding: 0 5px;
+}
+::placeholder{
+   font-size: 14px;
+   letter-spacing: 3;
+   color: #979797;
+   font-family:Arial, Helvetica, sans-serif;
+}
+header a{
+   font-size: 23px;
+   position: absolute;
+   top: 20px;
+   color: #9e9c9c;
+}
+input[type="text"]{
+   height: 45px;
+   width: 250%;
+   border-radius: 4px;
+   background: transparent;
+   border: 1px solid rgba(214, 210, 210, 0.377);
+   padding: 0 5%;
+   display: inline;
+   font-size: 14px;
+   letter-spacing: 3;
+   color: #979797;
+   font-family:Arial, Helvetica, sans-serif;
+}
+button[type="search"]{
+   position: relative;
+   left: 230%;
+   bottom: 2.3rem;
+   font-size: 20px;
+   background: none;
+   cursor: pointer;
+}
+button[type="search"] > span{
+   position: absolute;
+   visibility: hidden;
+   align-items: center;
+   top: 3.5rem;
+   left: -30px;
+   font-size: 13px;
+   color: #b6b5b5;
+   background: rgb(48, 47, 47);
+   padding: 8px 12px;
+   border-radius: 5px;
+}
+button[type="search"]:hover span{
+   visibility: visible;
+   transition: linear all .5s;
+}
+.result-box{
+   background: #2b2a2a;
+   border-radius: 4px;
+   padding: 0 10px;
+   transition: ease-in 2s;
+   max-height: 20rem;
+   overflow-y: scroll;
+}
+.result-box::-webkit-scrollbar{
+   width: 4px;
+   background: #eee;
+}
+.result-box::-webkit-scrollbar-button{
+   background: rgb(235, 234, 234);
+ }
+ .result-box::-webkit-scrollbar-thumb{
+   background:  gray;
+}
+.result-box ul{
+   transition: ease-in linear .5s;
+}
+.result-box ul li{
+   border-radius: 3px;
+   transition: ease-in .3s;
+   padding: 15px 10px;
+   cursor: pointer;
+   font-size: 14px;
+   letter-spacing: 3;
+   color: #928f8f;
+   font-family:Arial, Helvetica, sans-serif;
+}
+.result-box ul li:hover{
+   background:  rgb(61, 62, 63);
+   position: relative;
+} 
+
+
+
+
+
+
+
+
+/* smaller screens */
+
+@media screen and (max-width: 780px) {  
+div.rides-container2 .rides{
+   width: 99%;
+}
+}
+
+
+@media screen and (max-width: 450px) {  
+   button[type="search"]{
+      left: 222%;
+      bottom: 2.3rem;
+   }
+   .search-box{
+      width: 80%;
+   }
+   input[type="text"]{
+      width: 175%;
+   }
+   button[type="search"]{
+      left: 155%;
+   }
+   }
+
+
+@media screen and (max-width: 400px) {  
+   .search-box{
+      width: 55%;
+   }
+   input[type="search"]{
+      left: 145%;
+   }
+   }
+
+
+
