@@ -1,4 +1,4 @@
-# Auto-search-bar
+# Auto Complete search-bar
 
 ## Introduction
 The Auto-search-bar project aims to enhance user experience by providing real-time search suggestions and autocomplete functionality in search bars. This feature is particularly useful for improving user interaction on websites, helping users find relevant information more quickly and efficiently.
