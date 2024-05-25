@@ -38,7 +38,7 @@ git clone https://github.com/Emm-Anuel100/Auto-search-bar.git
 ```
 
 ```sh
-cd auto-search-bar
+cd Auto-search-bar
 ```
 
 ## Conclusion
